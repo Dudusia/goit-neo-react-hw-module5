@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import MovieList from '../../components/MovieList/MovieList'
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage'
 import Loader from '../../components/Loader/Loader'
-import { fetchMovies } from '../../services/moviesService'
+import { fetchTrendingMovies } from '../../services/moviesService'
 
 export default function HomePage() {
   const [isError, setIsError] = useState(false)
@@ -14,7 +14,7 @@ export default function HomePage() {
       try {
         setIsError(false);
         setIsLoading(true);
-        const data = await fetchMovies();
+        const data = await fetchTrendingMovies();
         setMovies(data.results);
       } catch {
         setIsError(true);
