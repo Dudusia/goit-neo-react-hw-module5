@@ -1,0 +1,51 @@
+/* MovieCast.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.castList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.castItem {
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.castItem:hover {
+  transform: translateY(-4px);
+}
+
+.castName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.castImage {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+}
+
+.noCast {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin: 20px 0;
+}

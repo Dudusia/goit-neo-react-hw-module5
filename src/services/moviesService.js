@@ -17,13 +17,12 @@ export const fetch = async (path, conf = {}) => {
 }
 
 export const fetchTrendingMovies = () => fetch('/trending/movie/day')
-
 export const fetchFilteredMovies = (searchQuery) => fetch('/search/movie', {
   params: {
     query: searchQuery
   }
 })
-
 export const fetchMovie = (id) => fetch(`/movie/${id}`)
+export const fetchCast = (id) => fetch(`/movie/${id}/credits`)
 
 export const createImagePath = (path, width = 300) => (`${IMAGE_BASE_URL}w${width}${path}`);
