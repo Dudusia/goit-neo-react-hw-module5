@@ -1,3 +1,35 @@
+import { useState, useEffect } from "react";
+import MovieList from '../../components/MovieList/MovieList'
+import ErrorMessage from '../../components/ErrorMessage/ErrorMessage'
+import Loader from '../../components/Loader/Loader'
+import { fetchMovies } from '../../services/moviesService'
+
 export default function HomePage() {
-  return <div>HomePage</div>;
+  const [isError, setIsError] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [movies, setMovies] = useState([])
+
+  useEffect(() => {
+    async function getMovies() {
+      try {
+        setIsError(false);
+        setIsLoading(true);
+        const data = await fetchMovies();
+        setMovies(data.results);
+      } catch {
+        setIsError(true);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    getMovies();
+  }, []);
+
+  return (<div>
+    <h1>Trending today</h1>
+    {movies.length > 0 && <MovieList movies={movies}/> }
+    {isError && <ErrorMessage />}
+    {isLoading && <Loader/>}
+  </div>);
 }
