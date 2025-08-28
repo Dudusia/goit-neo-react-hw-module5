@@ -1,5 +1,11 @@
 # Changelog goit-neo-react-hw-module5
 
+## [1.6.0](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.5.0...1.6.0) (2025-08-28)
+
+### Features
+
+* add MovieReview ([6261178](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/commit/626117878c67b452a2e3a741c418698809e82688))
+
 ## [1.5.0](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.4.0...1.5.0) (2025-08-28)
 
 ### Features
