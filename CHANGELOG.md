@@ -1,5 +1,11 @@
 # Changelog goit-neo-react-hw-module5
 
+## [1.6.1](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.6.0...1.6.1) (2025-08-28)
+
+### Bug Fixes
+
+* add vercel.json and run prettier ([6ebb190](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/commit/6ebb190352c62273b7a19be665339819e23f2d70))
+
 ## [1.6.0](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.5.0...1.6.0) (2025-08-28)
 
 ### Features
