@@ -38,8 +38,9 @@ export default function MovieCast() {
   return (
     <div className={css.container}>
       <Toaster position="top-right" reverseOrder={false} />
-      {isLoading && <Loader />}
-      {cast.length > 0 ? (
+      {isLoading ? (
+        <Loader />
+      ) : cast.length > 0 ? (
         <ul className={css.castList}>
           {cast.map((actor) => (
             <li key={actor.id} className={css.castItem}>

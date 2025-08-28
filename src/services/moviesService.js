@@ -24,5 +24,6 @@ export const fetchFilteredMovies = (searchQuery) => fetch('/search/movie', {
 })
 export const fetchMovie = (id) => fetch(`/movie/${id}`)
 export const fetchCast = (id) => fetch(`/movie/${id}/credits`)
+export const fetchReviews = (id) => fetch(`/movie/${id}/reviews`)
 
 export const createImagePath = (path, width = 300) => (`${IMAGE_BASE_URL}w${width}${path}`);
