@@ -1,0 +1,7 @@
+.pages-list {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
