@@ -1,5 +1,12 @@
 # Changelog goit-neo-react-hw-module5
 
+## [1.1.0](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.0.0...1.1.0) (2025-08-28)
+
+### Features
+
+* add lazy and suspense ([7afc718](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/commit/7afc71853c4faba4d26546ce5c25899a35e20d01))
+* add navigation ([0d74191](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/commit/0d74191e4522b7a995de9d18e4ec1981cb0741fb))
+
 ## 1.0.0 (2025-08-28)
 
 ### Features
