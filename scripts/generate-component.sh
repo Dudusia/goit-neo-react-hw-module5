@@ -24,13 +24,9 @@ else
     echo "$new_component_jsx does not exist, creating..."
     content="import css from \"./$new_component_name.module.css\";
 
-const $new_component_name = ({
-
-}) => (
-
-);
-
-export default $new_component_name;"
+export default function $new_component_name() {
+    return (<div>$new_component_name</div>)
+}"
     echo "$content" > "$new_component_jsx"
 fi
 
