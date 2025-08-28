@@ -1,15 +1,15 @@
-import { useState, useEffect } from "react";
-import { useParams, useLocation, Link, Outlet } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { useParams, useLocation, Link, Outlet } from 'react-router-dom';
 import { fetchMovie } from '../../services/moviesService';
 import { Toaster } from 'react-hot-toast';
 import toast from 'react-hot-toast';
-import Loader from "../../components/Loader/Loader";
+import Loader from '../../components/Loader/Loader';
 import { createImagePath } from '../../services/moviesService';
 import css from './MovieDetailsPage.module.css';
 
 export default function MovieDetailsPage() {
   const location = useLocation();
-  const backLinkRef = location.state?.from ?? "/movies";
+  const backLinkRef = location.state?.from ?? '/movies';
   const { movieId } = useParams();
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -43,7 +43,9 @@ export default function MovieDetailsPage() {
       <Toaster position="top-right" reverseOrder={false} />
       {movie && (
         <>
-          <Link to={backLinkRef} className={css.backLink}>Go back</Link>
+          <Link to={backLinkRef} className={css.backLink}>
+            Go back
+          </Link>
           <div className={css.movieContainer}>
             <div className={css.movieTop}>
               <img
@@ -53,12 +55,14 @@ export default function MovieDetailsPage() {
               />
               <div className={css.movieInfo}>
                 <h1 className={css.movieTitle}>{movie.title}</h1>
-                <p className={css.movieScore}>User score: {(movie.vote_average * 10).toFixed(0)}%</p>
+                <p className={css.movieScore}>
+                  User score: {(movie.vote_average * 10).toFixed(0)}%
+                </p>
                 <h2 className={css.movieOverviewTitle}>Overview</h2>
                 <p className={css.movieOverview}>{movie.overview}</p>
                 <h2>Genres</h2>
                 <ul className={css.movieGenres}>
-                  {movie.genres.map((genre) => (
+                  {movie.genres.map(genre => (
                     <li key={genre.id}>{genre.name}</li>
                   ))}
                 </ul>
@@ -68,10 +72,14 @@ export default function MovieDetailsPage() {
               <h2>Additional information</h2>
               <ul>
                 <li>
-                  <Link to="cast" state={location.state}>Cast</Link>
+                  <Link to="cast" state={location.state}>
+                    Cast
+                  </Link>
                 </li>
                 <li>
-                  <Link to="reviews" state={location.state}>Reviews</Link>
+                  <Link to="reviews" state={location.state}>
+                    Reviews
+                  </Link>
                 </li>
               </ul>
             </div>

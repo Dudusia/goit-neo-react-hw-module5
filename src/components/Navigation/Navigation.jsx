@@ -1,11 +1,11 @@
-import css from "./Navigation.module.css";
-import { NavLink } from "react-router-dom";
+import css from './Navigation.module.css';
+import { NavLink } from 'react-router-dom';
 
 export default function Navigation() {
   return (
     <header className={css.header}>
       <nav>
-        <ul className={css["pages-list"]}>
+        <ul className={css['pages-list']}>
           <li>
             <NavLink to="/">Home</NavLink>
           </li>

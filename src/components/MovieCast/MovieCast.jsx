@@ -1,10 +1,10 @@
-import { useParams } from "react-router-dom";
-import css from "./MovieCast.module.css";
-import { useEffect, useState } from "react";
-import toast from "react-hot-toast";
-import { fetchCast, createImagePath } from "../../services/moviesService";
-import Loader from "../Loader/Loader";
-import { Toaster } from "react-hot-toast";
+import { useParams } from 'react-router-dom';
+import css from './MovieCast.module.css';
+import { useEffect, useState } from 'react';
+import toast from 'react-hot-toast';
+import { fetchCast, createImagePath } from '../../services/moviesService';
+import Loader from '../Loader/Loader';
+import { Toaster } from 'react-hot-toast';
 
 export default function MovieCast() {
   const { movieId } = useParams();
@@ -42,7 +42,7 @@ export default function MovieCast() {
         <Loader />
       ) : cast.length > 0 ? (
         <ul className={css.castList}>
-          {cast.map((actor) => (
+          {cast.map(actor => (
             <li key={actor.id} className={css.castItem}>
               <p className={css.castName}>{actor.original_name}</p>
               <div>
@@ -56,7 +56,9 @@ export default function MovieCast() {
           ))}
         </ul>
       ) : (
-        !isLoading && <p className={css.noCast}>We did not find any cast for this movie.</p>
+        !isLoading && (
+          <p className={css.noCast}>We did not find any cast for this movie.</p>
+        )
       )}
     </div>
   );

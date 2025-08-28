@@ -1,18 +1,18 @@
-import { useSearchParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useSearchParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import { Toaster } from 'react-hot-toast';
 import toast from 'react-hot-toast';
 import css from './MoviesPage.module.css';
 import { fetchFilteredMovies } from '../../services/moviesService';
 import Loader from '../../components/Loader/Loader';
-import MovieList from "../../components/MovieList/MovieList";
+import MovieList from '../../components/MovieList/MovieList';
 
 export default function MoviesPage() {
   const [params, setParams] = useSearchParams();
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [movies, setMovies] = useState([]);
-  const searchText = params.get("searchText") ?? "";
+  const searchText = params.get('searchText') ?? '';
 
   useEffect(() => {
     async function getMovies() {
@@ -36,9 +36,9 @@ export default function MoviesPage() {
     if (isError) {
       toast.error('Something went wrong...');
     }
-  }, [isError])
+  }, [isError]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const topic = formData.get('search').trim();
@@ -47,7 +47,7 @@ export default function MoviesPage() {
       return;
     }
     const nextParams = new URLSearchParams(params);
-    nextParams.set("searchText", topic);
+    nextParams.set('searchText', topic);
     setParams(nextParams);
   };
 
@@ -64,7 +64,9 @@ export default function MoviesPage() {
           defaultValue={searchText}
           className={css.input}
         />
-        <button type="submit" className={css.button}>Search</button>
+        <button type="submit" className={css.button}>
+          Search
+        </button>
       </form>
       {isLoading && <Loader />}
       {movies.length > 0 && <MovieList movies={movies} />}
