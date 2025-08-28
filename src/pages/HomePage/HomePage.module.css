@@ -1,0 +1,21 @@
+/* HomePage.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin: 24px 0;
+}

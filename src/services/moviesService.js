@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const BASE_URL="https://api.themoviedb.org/3"
-const ACCESS_TOKEN=import.meta.env.VITE_THEMOVIEDB_ACCESS_TOKEN
+//const ACCESS_TOKEN=import.meta.env.VITE_THEMOVIEDB_ACCESS_TOKEN
+const ACCESS_TOKEN="blablabla"
 
 const requestBase = axios.create({
   baseURL: BASE_URL,
