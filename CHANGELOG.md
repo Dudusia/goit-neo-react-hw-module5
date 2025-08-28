@@ -1,5 +1,11 @@
 # Changelog goit-neo-react-hw-module5
 
+## [1.5.0](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.4.0...1.5.0) (2025-08-28)
+
+### Features
+
+* add MovieCast ([ea2d2eb](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/commit/ea2d2eb0bf5c47d9923b2e5f921a7e47f9b78461))
+
 ## [1.4.0](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.3.0...1.4.0) (2025-08-28)
 
 ### Features
