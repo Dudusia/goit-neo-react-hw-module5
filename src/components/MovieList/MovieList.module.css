@@ -1,0 +1,50 @@
+/* MovieList.module.css */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.item {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border: 1px solid #e0e6ed;
+}
+
+.item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+}
+
+.link {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  color: #2c3e50;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  background: transparent;
+  border-radius: 10px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #5d5fef;
+}
+
+/* Optional: Add a subtle border on focus for accessibility */
+.link:focus {
+  outline: 2px solid #5d5fef;
+  outline-offset: 2px;
+}
