@@ -1,4 +1,4 @@
-import { Link, useLocation, useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Toaster } from 'react-hot-toast';
 import toast from 'react-hot-toast';
@@ -22,7 +22,6 @@ export default function MoviesPage() {
         const data = await fetchFilteredMovies(searchText);
         setMovies(data.results);
       } catch {
-        toast.error('Something went wrong...');
         setIsError(true);
       } finally {
         setIsLoading(false);
@@ -32,6 +31,12 @@ export default function MoviesPage() {
       getMovies();
     }
   }, [searchText]);
+
+  useEffect(() => {
+    if (isError) {
+      toast.error('Something went wrong...');
+    }
+  }, [isError])
 
   const handleSubmit = (e) => {
     e.preventDefault();

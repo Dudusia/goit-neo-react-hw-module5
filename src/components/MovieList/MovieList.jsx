@@ -9,7 +9,7 @@ export default function MovieList({ movies }) {
         <li key={movie.id} className={css.item}>
           <Link
             to={`/movies/${movie.id}`}
-            state={{ from: location }}
+            state={location}
             className={css.link}
           >
             {movie.title}
