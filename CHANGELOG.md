@@ -1,5 +1,11 @@
 # Changelog goit-neo-react-hw-module5
 
+## [1.3.0](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.2.0...1.3.0) (2025-08-28)
+
+### Features
+
+* add MovieList ([3c1cf37](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/commit/3c1cf373118591067a27c720bcde8ce043ab3dfd))
+
 ## [1.2.0](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.1.0...1.2.0) (2025-08-28)
 
 ### Features
