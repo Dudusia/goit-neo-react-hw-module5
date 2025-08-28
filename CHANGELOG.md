@@ -1,5 +1,11 @@
 # Changelog goit-neo-react-hw-module5
 
+## [1.4.0](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.3.0...1.4.0) (2025-08-28)
+
+### Features
+
+* add MovieDetailsPage ([5522ac7](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/commit/5522ac794f4cee131c498bb2a1832b12f9815dad))
+
 ## [1.3.0](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.2.0...1.3.0) (2025-08-28)
 
 ### Features
