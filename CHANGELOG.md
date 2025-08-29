@@ -1,5 +1,11 @@
 # Changelog goit-neo-react-hw-module5
 
+## [1.6.3](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.6.2...1.6.3) (2025-08-29)
+
+### Bug Fixes
+
+* use location.state instead ([ae1d1a8](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/commit/ae1d1a8f32b09d9f5c95ab08a335046b975daf45))
+
 ## [1.6.2](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.6.1...1.6.2) (2025-08-29)
 
 ### Bug Fixes
