@@ -9,7 +9,7 @@ import css from './MovieDetailsPage.module.css';
 
 export default function MovieDetailsPage() {
   const location = useLocation();
-  const backLinkRef = useRef(location.state?.from ?? '/movies')
+  const backLinkRef = useRef(location.state ?? '/movies')
   const { movieId } = useParams();
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
