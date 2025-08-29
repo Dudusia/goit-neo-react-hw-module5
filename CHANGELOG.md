@@ -1,5 +1,11 @@
 # Changelog goit-neo-react-hw-module5
 
+## [1.6.2](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.6.1...1.6.2) (2025-08-29)
+
+### Bug Fixes
+
+* use ref for backlink ([e6d7119](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/commit/e6d71199c355ebc096832c30fcf8b74b5cc1f882))
+
 ## [1.6.1](https://gitlab.com/goit-uni/react/goit-neo-react-hw-module5/compare/1.6.0...1.6.1) (2025-08-28)
 
 ### Bug Fixes
