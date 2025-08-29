@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useParams, useLocation, Link, Outlet } from 'react-router-dom';
 import { fetchMovie } from '../../services/moviesService';
 import { Toaster } from 'react-hot-toast';
@@ -9,7 +9,7 @@ import css from './MovieDetailsPage.module.css';
 
 export default function MovieDetailsPage() {
   const location = useLocation();
-  const backLinkRef = location.state?.from ?? '/movies';
+  const backLinkRef = useRef(location.state?.from ?? '/movies')
   const { movieId } = useParams();
   const [isError, setIsError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -43,7 +43,7 @@ export default function MovieDetailsPage() {
       <Toaster position="top-right" reverseOrder={false} />
       {movie && (
         <>
-          <Link to={backLinkRef} className={css.backLink}>
+          <Link to={backLinkRef.current} className={css.backLink}>
             Go back
           </Link>
           <div className={css.movieContainer}>
